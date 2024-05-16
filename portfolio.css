@@ -1,0 +1,355 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.Name{
+    font-size: 2rem;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(45deg,white, rgb(52, 47, 47), white);
+    background-size: 300% 300%;
+    animation: color 15s ease-in-out infinite;
+    padding-top: 150px;
+}
+
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 100%;    
+    }
+    
+}
+
+.Romel{
+    background: linear-gradient(45deg, rgb(52, 234, 143), white,rgb(78, 180, 227));
+    -webkit-background-clip: text;
+    background-size: 300% 300%;
+    color:  transparent;    
+    animation: colors 15s ease-in-out infinite;
+    font-size: 4rem;
+    font-family: "Roboto Mono", monospace;
+}
+
+.Name > h1 > span{
+    position: relative;
+    background: linear-gradient(45deg, rgb(228, 210, 76), white,rgb(123, 235, 179));
+    -webkit-background-clip: text;
+    color:  transparent;    
+    animation: colors 15s ease-in-out infinite;
+    font-size: 3rem;
+    font-family: "Roboto Mono", monospace;
+}
+
+.Name > h1 > span::before{
+    content: "Computer Engineer";
+    animation: words 15s infinite;
+}
+
+.Name > h1 > span::after{
+    content: "";
+    position:absolute;
+    width: calc(100% +8px);
+    height: 100%;
+    border-left: 2px;
+    right: -8px;
+    animation: typing 20s steps(14) infinite;
+}
+
+@keyframes words {
+    0%, 20%{
+        content: "Artificial Intelligence/ML Engineer"
+    }
+    21%, 40%{
+        content: "Cybersecurity Analyst";
+    }
+    41%, 60%{
+        content: "Full Stack Developer";
+    }
+    61%, 80%{
+        content: "Robotic Engineer";
+    }
+    81%, 100%{
+        content: "Data Analyst";
+    }
+}
+
+@keyframes typing {
+    10%, 15%, 30%,50%,55%,70%,75%,90%, 95%{
+        width:0;
+    }
+    5%, 15%, 25%, 40%, 60%, 65%, 80%,85%{
+        width: calc(100% +8px)
+    }
+
+}
+
+
+@keyframes colors {
+    0%{
+        background-position: 0 100%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0 100%;    
+    }
+}
+
+.AM-content{
+    display: flex;
+}
+
+
+.who{
+    font-size: 1.5rem; 
+    font-family: "Roboto Mono", monospace;
+    color: rgb(118, 4, 72);
+ }
+
+.AM-content > p{
+    width: 800px;
+    margin-top: 40px;
+    font-size: 20px;
+    animation: typing 7s steps(248), cursor .4s step-end infinite alternate;
+    overflow: hidden;
+    margin-left: 100px;
+    font-family: "Heebo", sans-serif;
+    
+}
+
+.ABOUT-ME > h2 {
+    width: 300px;
+    margin-bottom:0; 
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    display: block;
+}
+@keyframes cursor { 
+    50%{
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from{width: 0};
+    
+}
+
+
+.ABOUT-ME > h1{
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 2rem;
+}
+
+.Contacts{
+    margin-top:100px;
+}   
+
+
+
+.Romel-Picture{
+    width: 230px;
+    height: 230px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: inline-block;
+    border: solid 1px rgb(60, 56, 56);
+    border-radius: 100px;
+
+}
+
+.one{
+    display : none;
+}
+
+.Socials{
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 10px;
+
+}
+.SKILLS > h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.bar{
+    height: 20px;
+}
+
+.Skill-container > div{
+    padding: 20px;
+}
+
+.percentage{
+    padding-right: 200px;
+    font-size: 20px;
+    padding-top: 20px;
+
+}
+
+.html , .css , .js, .py, .cpp, .vb, .mysql, .arduino {
+    width: 250px;    
+    text-align: center;
+    margin-bottom: 50px;
+    float: left;
+    margin-left: 50px;
+}
+
+.html .bar{
+    width: 40%;
+    background-color: orange;
+    margin: 0;
+    padding: 0;
+}
+
+.css .bar{
+    width:  25%;
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+}
+
+.js .bar{
+    width:  10%;
+    background-color: rgb(204, 204, 40);
+    margin: 0;
+    padding: 0;
+}
+
+.py .bar{
+    width:  15%;
+    background-color: rgb(204, 204, 40);
+    margin: 0;
+    padding: 0;
+}
+
+.cpp .bar{
+    width:  10%;
+    background-color: rgb(107, 107, 229);
+    margin: 0;
+    padding: 0;
+}
+
+.vb .bar{
+    width:  30%;
+    background-color: rgb(124, 25, 124);
+    margin: 0;
+    padding: 0;
+}
+
+.mysql .bar{
+    width:  30%;
+    background-color:rgb(74, 74, 203);  
+    margin: 0;
+    padding: 0;
+}
+
+.arduino .bar{
+    width:  10%;
+    background-color:rgb(53, 53, 182);  
+    margin: 0;
+    padding: 0;
+}
+
+.SKILLS {
+    background-color: rgb(246, 205, 205);
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.certificate{
+    background-color: rgb(0, 0, 0); 
+}
+.certificate-container > img{
+    width: 500px;
+    height: 300px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+   
+}
+
+.certificate-container{
+    text-align: center;
+}
+
+@media (max-width: 750px){
+    .Name{
+        font-size: 1.0rem;
+        padding-top: 150px;
+
+    }
+    .Romel{
+        font-size: 2.0rem;
+    }
+
+    .Name > h1{
+        padding: 10px;
+    }
+    .Name > h1 > span{
+        font-size: 2.0rem;
+    }
+
+    
+    .certificate-container > img{
+        width: 50%;
+        height: 40%;
+    }
+
+    .AM-content > p{
+        margin-top: 25px;
+        font-size: 20px;
+        font-family: "Heebo", sans-serif;
+        margin-left: 5%;
+        margin-right: 5px;
+        text-align: center;
+        text-align: justify;
+        width: 90%;
+    }
+    
+
+    .AM-content{
+        font-size: 10px;
+        display: block;
+    }
+    .ABOUT-ME > h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    
+    .Romel-Picture{
+        width: 200px;
+        height: 200px;
+        margin-left: 10px;
+        justify-content: center;
+        border: solid 1px rgb(60, 56, 56);
+        border-radius: 100px;
+    }
+    .one{
+        display: block;
+        text-align: center;
+        margin: 20px;
+        margin-left: 24%;
+    }
+
+    .two{
+        display: none;
+    }
+
+    .who{
+       font-size: 1rem; 
+       font-family: "Roboto Mono", monospace;
+       color: rgb(118, 4, 72);
+    }
+}
